@@ -5,9 +5,7 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping>
-          <factory-entry name="demo" />
-        </datasource-mapping>
+        <datasource-mapping />
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -23,27 +21,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: io.quarkus:quarkus-smallrye-opentracing:1.10.3.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.microprofile.opentracing:microprofile-opentracing-api:1.3.3" level="project" />
-    <orderEntry type="library" name="Maven: io.smallrye:smallrye-opentracing:1.3.4" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.microprofile.rest.client:microprofile-rest-client-api:1.4.1" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing:opentracing-api:0.31.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-jaxrs2:0.4.1" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing:opentracing-noop:0.31.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-web-servlet-filter:0.2.3" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-concurrent:0.2.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-interceptors:0.0.4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.opentracing.contrib:opentracing-tracerresolver:0.1.8" level="project" />
-    <orderEntry type="library" name="Maven: io.smallrye:smallrye-fault-tolerance-tracing-propagation:4.3.2" level="project" />
-    <orderEntry type="library" name="Maven: io.quarkus:quarkus-jaeger:1.10.3.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.jaegertracing:jaeger-core:0.34.3" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing:opentracing-util:0.31.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.6" level="project" />
-    <orderEntry type="library" name="Maven: io.jaegertracing:jaeger-thrift:0.34.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.13.0" level="project" />
-    <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.14.9" level="project" />
-    <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.17.2" level="project" />
-    <orderEntry type="library" name="Maven: jakarta.servlet:jakarta.servlet-api:4.0.3" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-arc:1.10.3.Final" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus.arc:arc:1.10.3.Final" level="project" />
     <orderEntry type="library" name="Maven: jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2" level="project" />
