@@ -1,0 +1,5 @@
+org/acme/hibernate/ProdutoService.class
+org/acme/jaeger/MunicipioVO.class
+org/acme/hibernate/ProdutoResource.class
+org/acme/GreetingResource.class
+org/acme/hibernate/ProdutoVO.class

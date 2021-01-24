@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+
+  db:
+    image: postgres:latest
+    restart: on-failure
+    hostname: db.local
+    container_name: postgres-container
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+    links:
+      - "adminer"
+    ports:
+      - '5555:5432'
+    volumes:
+      - .:/volumes/postgres
+    networks:
+      app:
+
+  adminer:
+    image: adminer:latest
+    hostname: adm.local
+    restart: always
+    container_name: adminer-container
+    ports:
+      - 8000:8080
+    volumes:
+      - .:/volumes/adminer
+    networks:
+      app:
+
+networks:
+  app:
+    name: app

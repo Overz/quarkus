@@ -1,0 +1,28 @@
+version: '3.8'
+
+# https://nano.local -> nginx:443
+
+services:
+  minio:
+    image: minio/minio:latest
+    hostname: minio-srv
+    restart: always
+    container_name: minio-container
+    volumes:
+      - minio:/data/minio/:rw
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: miniosecret
+    ports:
+      - 9000:9000
+    expose:
+      - 9000
+    networks:
+      app:
+    command: ['server', '/data/minio']
+
+networks:
+  app:
+
+volumes:
+  minio:
