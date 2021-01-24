@@ -1,5 +1,5 @@
-/home/cris/dev/java/quarkus/quarkus-github/src/main/java/org/acme/hibernate/ProdutoService.java
-/home/cris/dev/java/quarkus/quarkus-github/src/main/java/org/acme/GreetingResource.java
-/home/cris/dev/java/quarkus/quarkus-github/src/main/java/org/acme/hibernate/ProdutoVO.java
-/home/cris/dev/java/quarkus/quarkus-github/src/main/java/org/acme/hibernate/ProdutoResource.java
-/home/cris/dev/java/quarkus/quarkus-github/src/main/java/org/acme/jaeger/MunicipioVO.java
+/home/cris/dev/java/quarkus/teste/src/main/java/org/acme/hibernate/ProdutoVO.java
+/home/cris/dev/java/quarkus/teste/src/main/java/org/acme/hibernate/ProdutoResource.java
+/home/cris/dev/java/quarkus/teste/src/main/java/org/acme/hibernate/ProdutoService.java
+/home/cris/dev/java/quarkus/teste/src/main/java/org/acme/jaeger/MunicipioVO.java
+/home/cris/dev/java/quarkus/teste/src/main/java/org/acme/GreetingResource.java

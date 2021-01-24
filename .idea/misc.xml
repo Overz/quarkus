@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/minio/pom.xml" />
         <option value="$PROJECT_DIR$/teste/pom.xml" />
+        <option value="$PROJECT_DIR$/reactive-routes/pom.xml" />
+        <option value="$PROJECT_DIR$/reactive/pom.xml" />
       </list>
     </option>
   </component>

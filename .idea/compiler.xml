@@ -8,10 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="teste" />
         <module name="minio" />
+        <module name="reactive-routes" />
+        <module name="reactive" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="minio" target="11" />
+      <module name="reactive" target="11" />
+      <module name="reactive-routes" target="11" />
       <module name="teste" target="11" />
     </bytecodeTargetLevel>
   </component>
