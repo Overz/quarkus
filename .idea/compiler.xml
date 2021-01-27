@@ -10,12 +10,16 @@
         <module name="minio" />
         <module name="reactive-routes" />
         <module name="reactive" />
+        <module name="jwt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jwt" target="11" />
       <module name="minio" target="11" />
       <module name="reactive" target="11" />
       <module name="reactive-routes" target="11" />
+      <module name="rest" target="11" />
+      <module name="security" target="11" />
       <module name="teste" target="11" />
     </bytecodeTargetLevel>
   </component>

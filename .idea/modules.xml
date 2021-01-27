@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/jwt/jwt.iml" filepath="$PROJECT_DIR$/jwt/jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/minio/minio.iml" filepath="$PROJECT_DIR$/minio/minio.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/quarkus.iml" filepath="$PROJECT_DIR$/.idea/quarkus.iml" />
       <module fileurl="file://$PROJECT_DIR$/reactive/reactive.iml" filepath="$PROJECT_DIR$/reactive/reactive.iml" />
