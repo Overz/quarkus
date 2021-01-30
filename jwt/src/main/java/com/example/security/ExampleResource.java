@@ -12,6 +12,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.security.Principal;
 
+/**
+ * Classe exemplo de login com jwt auto-gerado por uma lib esclarecida no README.md
+ * os valores de login tem q bater com os valores do token auto gerado.
+ */
 @RequestScoped
 @Path("/hello")
 public class ExampleResource {
