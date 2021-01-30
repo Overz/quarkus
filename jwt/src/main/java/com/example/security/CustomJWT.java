@@ -37,10 +37,9 @@ public class CustomJWT {
   public Response login(@Body LoginVO login, @Context HttpResponse res) {
     if (login.getLogin().equals(l) && login.getSenha().equals(s)) {
       String token = generateToken(login);
-//      Outram aneira de adc o cookie
       res.getOutputHeaders().add(HttpHeaders.AUTHORIZATION, token);
-//      Cookie cookie = new Cookie("Bearer", token, "/", "custom-jwt.local");
-      return Response.ok().entity(login).build();
+      Cookie cookie = new Cookie("jwt", token, "/", "custom-jwt.local");
+      return Response.ok().entity(login).cookie(new NewCookie(cookie)).build();
     }
     return Response.status(400).build();
   }
@@ -50,16 +49,16 @@ public class CustomJWT {
   @Path("/cookie")
   @Produces(MediaType.APPLICATION_JSON)
   public String cookie(@Context HttpServerRequest req) {
-    return req.getHeader("Authorization");
+    return req.getHeader("Cookie");
   }
 
   @GET
   @Path("/admin")
   @Produces(MediaType.APPLICATION_JSON)
-  public Response admin(@Context HttpServerRequest req, @Context SecurityContext ctx) {
+  public Response admin(@Context HttpServerRequest req) {
     var map = req.headers();
-    Object o = "{ roles: " + ctx.getUserPrincipal() + ", authorization: " +  map.get("Authorization") + " }";
-    return Response.ok().entity(o).header("Authorization", "").build();
+    Object o = "{ ok: true, cookie: " + map.get("Cookie") + " }";
+    return Response.ok().entity(o).build();
   }
 
   private String generateToken(LoginVO login) {
